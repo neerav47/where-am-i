@@ -1,2 +1,2 @@
-# mobile-robot-chase-white-ball
+# Go Chase It.
 Mobile robot chasing white ball in Gazebo environment.

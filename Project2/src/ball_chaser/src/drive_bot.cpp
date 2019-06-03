@@ -5,6 +5,8 @@
 ros::Publisher motor_command_publisher;
 //Define Call back method - handle_drive_request which takes our custom defined message type.
 bool handle_drive_request(ball_chaser::DriveToTarget::Request& request, ball_chaser::DriveToTarget::Response& response){
+    //Print Info messages
+    ROS_INFO("DriveToTarget Request received - linear_x: %1.2f, angular_z: %1.2f", request.linear_x, request.angular_z);
     //Create geometry_msgs::Twist message
     geometry_msgs::Twist motor_command;
     //set linear and angular velocities.
